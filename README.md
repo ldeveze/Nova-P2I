@@ -18,7 +18,7 @@ Avant de commencer, assure-toi d'avoir installé sur ta machine :
 
 Après avoir téléchargé et dézippé le contenu du fichier `.zip` dans le dossier de ton choix. Tu obtiens une structure de ce type :
 
-Nova/
+Nova-P2I-main/
 
 ├── public/
 
@@ -40,7 +40,7 @@ Nova/
 
 ### 2. Installer les dépendances du front-end
 
-Ouvre un terminal à la racine du projet (dans le dossier `Nova/`) et lance :
+Ouvre un terminal à la racine du projet (dans le dossier `Nova-P2I-main/`) et lance :
 
 ```bash
 npm install
@@ -77,7 +77,7 @@ Tu dois voir s'afficher :
 
 ### Terminal 2 — Lancer le front-end
 
-À la racine du projet (dossier `Nova/`) lance :
+À la racine du projet (dossier `Nova-P2I-main/`) lance :
 
 ```bash
 npm run dev
@@ -134,7 +134,7 @@ La musique apparaîtra ensuite automatiquement dans le carousel de sélection ap
 
 Après avoir effectué toutes les installations, voici la structure que devrait avoir ton dossier.
 
-Nova/
+Nova-P2I-main/
 
 ├── public/
 
