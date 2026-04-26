@@ -81,19 +81,16 @@ function next() {
 }
 
 onMounted(async () => {
-  const res = await fetch("http://localhost:3000/musiques");
-  const fichiers = await res.json();
   const metaRes = await fetch("/audio/musiques.json");
   const meta = await metaRes.json();
-  musiques.value = fichiers.map((f) => {
-    const info = meta.find((m) => m.fichier === f);
-    return {
-      id: f,
-      titre: info?.titre ?? f.replace(/\.[^.]+$/, ""),
-      artiste: info?.artiste ?? "Artiste inconnu",
-      fichier: f,
-    };
-  });
+
+  musiques.value = meta.map((m) => ({
+    id: m.fichier,
+    titre: m.titre,
+    artiste: m.artiste,
+    fichier: m.fichier,
+  }));
+
   initStars();
   starsCtx = starsCanvas.value.getContext("2d");
   loopStars();
